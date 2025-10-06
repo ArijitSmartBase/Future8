@@ -1,0 +1,3499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJFI Student - Successful Life Lessons & Certificates</title>
+    <meta name="description" content="Motivational stories, life lessons, and personalized certificates for students by AJ Future Industries">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #0b2545;
+            --secondary-bg: #1a365d;
+            --accent-gold: #f3c052;
+            --accent-cyan: #00d4ff;
+            --text-primary: #ffffff;
+            --text-secondary: #e2e8f0;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --d-fast: 250ms;
+            --d-med: 600ms;
+            --d-slow: 1000ms;
+            --ease-smooth: cubic-bezier(.2,.9,.3,1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--primary-bg);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Enhanced Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(11, 37, 69, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all var(--d-med) var(--ease-smooth);
+        }
+
+        .navbar.scrolled {
+            background: rgba(11, 37, 69, 0.98);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        .logo {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: all var(--d-fast) var(--ease-smooth);
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--d-fast) var(--ease-smooth);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: width var(--d-fast) var(--ease-smooth);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-toggle {
+            display: flex;
+            background: var(--glass-bg);
+            border-radius: 25px;
+            padding: 0.3rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all var(--d-fast) var(--ease-smooth);
+            font-size: 0.9rem;
+        }
+
+        .lang-btn.active {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            box-shadow: 0 4px 15px rgba(243, 192, 82, 0.3);
+        }
+
+        .theme-toggle {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--d-fast) var(--ease-smooth);
+            font-size: 1.2rem;
+        }
+
+        .theme-toggle:hover {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            transform: rotate(180deg);
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            transition: all var(--d-fast) var(--ease-smooth);
+        }
+
+        .mobile-menu-toggle:hover {
+            background: var(--accent-gold);
+        }
+
+        .hamburger {
+            width: 25px;
+            height: 3px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: all var(--d-fast) var(--ease-smooth);
+            border-radius: 2px;
+        }
+
+        .mobile-menu-toggle.active .hamburger:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-toggle.active .hamburger:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle.active .hamburger:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(11, 37, 69, 0.98);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+            transition: left var(--d-med) var(--ease-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobile-nav.active {
+            left: 0;
+        }
+
+        .mobile-nav-links {
+            list-style: none;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .mobile-nav-links li {
+            margin: 2rem 0;
+        }
+
+        .mobile-nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: all var(--d-fast) var(--ease-smooth);
+            display: block;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .mobile-nav-links a:hover {
+            color: var(--accent-gold);
+            background: var(--glass-bg);
+            transform: scale(1.05);
+        }
+
+        .mobile-nav-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .mobile-language-toggle {
+            display: flex;
+            background: var(--glass-bg);
+            border-radius: 25px;
+            padding: 0.3rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .mobile-theme-toggle {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--d-fast) var(--ease-smooth);
+            font-size: 1.5rem;
+        }
+
+        .mobile-theme-toggle:hover {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            transform: rotate(180deg);
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg));
+            z-index: -2;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(243, 192, 82, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+            animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroGlow {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-title {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan), var(--accent-gold));
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titleShimmer 3s ease-in-out infinite, fadeInUp var(--d-slow) var(--ease-smooth);
+        }
+
+        @keyframes titleShimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.3rem, 4vw, 2.2rem);
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            animation: fadeInUp var(--d-slow) var(--ease-smooth) 0.3s both;
+            line-height: 1.4;
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp var(--d-slow) var(--ease-smooth) 0.6s both;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp var(--d-slow) var(--ease-smooth) 0.9s both;
+        }
+
+        .btn {
+            padding: 1.2rem 2.5rem;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            color: var(--primary-bg);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all var(--d-med) var(--ease-smooth);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 8px 25px rgba(243, 192, 82, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(243, 192, 82, 0.5);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn:active::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--accent-gold);
+            color: var(--accent-gold);
+            box-shadow: none;
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            box-shadow: 0 15px 35px rgba(243, 192, 82, 0.3);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 4rem;
+            animation: fadeInUp var(--d-slow) var(--ease-smooth) 1.2s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-family: 'Orbitron', monospace;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-stat-label {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .scroll-indicator::before {
+            content: '↓';
+            font-size: 2rem;
+            color: var(--accent-gold);
+            display: block;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Enhanced Stories Section */
+        .stories-section {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(243, 192, 82, 0.05));
+            position: relative;
+        }
+
+        .stories-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="0.5" fill="rgba(243,192,82,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .stories-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .stories-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .stories-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all var(--d-fast) var(--ease-smooth);
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .filter-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .filter-btn:hover::before {
+            left: 100%;
+        }
+
+        .filter-btn.active {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            border-color: var(--accent-gold);
+            box-shadow: 0 4px 15px rgba(243, 192, 82, 0.3);
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(243, 192, 82, 0.2);
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .story-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all var(--d-med) var(--ease-smooth);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .story-card:hover::before {
+            left: 100%;
+        }
+
+        .story-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(243, 192, 82, 0.2);
+            border-color: var(--accent-gold);
+        }
+
+        .story-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-icon {
+            font-size: 3rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            border-radius: 50%;
+            color: var(--primary-bg);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .story-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+            flex: 1;
+        }
+
+        .story-summary {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .story-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: auto;
+        }
+
+        .story-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .story-tag {
+            background: rgba(243, 192, 82, 0.2);
+            color: var(--accent-gold);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .story-progress {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .story-progress-bar {
+            height: 100%;
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            border-radius: 2px;
+            transition: width 1s ease-in-out;
+            width: 0;
+        }
+
+        .story-card:hover .story-progress-bar {
+            width: 100%;
+        }
+
+        .story-read-more {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all var(--d-fast) var(--ease-smooth);
+        }
+
+        .story-read-more:hover {
+            color: var(--accent-gold);
+            transform: translateX(5px);
+        }
+
+        /* Lessons Section */
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .lesson-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all var(--d-med) var(--ease-smooth);
+            cursor: pointer;
+            position: relative;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .lesson-card:hover {
+            transform: rotateY(10deg) translateY(-5px);
+        }
+
+        .lesson-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .lesson-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--accent-cyan);
+        }
+
+        .lesson-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Certificate Section */
+        .certificate-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .certificate-preview-section {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        .preview-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .preview-controls {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .preview-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all var(--d-fast) var(--ease-smooth);
+        }
+
+        .preview-btn.active {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            border-color: var(--accent-gold);
+        }
+
+        .certificate-preview {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .certificate-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all var(--d-fast) var(--ease-smooth);
+        }
+
+        .action-btn:hover {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            transform: translateY(-2px);
+        }
+
+        .certificate-form-section {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        .form-header {
+            margin-bottom: 2rem;
+        }
+
+        .form-section {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .form-section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-label {
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .primary-btn {
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            color: var(--primary-bg);
+            flex: 1;
+        }
+
+        .secondary-btn {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+        }
+
+        .certificate-features {
+            margin-top: 4rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--glass-bg);
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            transition: all var(--d-med) var(--ease-smooth);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(243, 192, 82, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-item h4 {
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        /* About Section Styles */
+        .mission-statement {
+            margin-bottom: 4rem;
+        }
+
+        .mission-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, var(--accent-gold), transparent);
+            animation: rotate 4s linear infinite;
+            opacity: 0.1;
+        }
+
+        .mission-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mission-card h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mission-card p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 2;
+        }
+
+        .leadership-profiles {
+            margin-bottom: 4rem;
+        }
+
+        .leadership-profiles h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--accent-cyan);
+        }
+
+        .leaders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+
+        .leader-profile {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all var(--d-med) var(--ease-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .leader-profile:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+        }
+
+        .leader-avatar {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .avatar-image {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .achievement-badge {
+            background: linear-gradient(45deg, var(--accent-gold), var(--accent-cyan));
+            color: var(--primary-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .leader-name {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .leader-title {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .leader-bio {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .achievements {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .achievement-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .achievement-icon {
+            font-size: 1.5rem;
+        }
+
+        .achievement-text {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .company-stats {
+            margin-top: 4rem;
+        }
+
+        .company-stats h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--accent-gold);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--glass-bg);
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            transition: all var(--d-med) var(--ease-smooth);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(243, 192, 82, 0.2);
+        }
+
+        .stat-number {
+            font-family: 'Orbitron', monospace;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Contact Section Styles */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-form-section {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        .form-header {
+            margin-bottom: 2rem;
+        }
+
+        .form-header h3 {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-header p {
+            color: var(--text-secondary);
+        }
+
+        .advanced-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .input-focus-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-cyan);
+            transition: width var(--d-fast) var(--ease-smooth);
+        }
+
+        .form-group input:focus + .input-focus-line,
+        .form-group select:focus + .input-focus-line,
+        .form-group textarea:focus + .input-focus-line {
+            width: 100%;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .submit-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-loading {
+            display: none;
+        }
+
+        .submit-btn.loading .btn-text {
+            display: none;
+        }
+
+        .submit-btn.loading .btn-loading {
+            display: inline;
+        }
+
+        .contact-info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-info-card,
+        .social-media-card,
+        .response-time-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 2rem;
+        }
+
+        .contact-info-card h3,
+        .social-media-card h3,
+        .response-time-card h3 {
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .method-icon {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--glass-bg);
+            border-radius: 50%;
+            border: 1px solid var(--glass-border);
+        }
+
+        .method-info h4 {
+            color: var(--accent-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .method-info p {
+            color: var(--text-secondary);
+            margin: 0.2rem 0;
+        }
+
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all var(--d-fast) var(--ease-smooth);
+        }
+
+        .social-link:hover {
+            background: var(--accent-gold);
+            color: var(--primary-bg);
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+        }
+
+        .response-times {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .response-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .response-type {
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        .response-time {
+            color: var(--text-secondary);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all var(--d-fast) var(--ease-smooth);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Enhanced Responsive Design */
+        @media (max-width: 1200px) {
+            .nav-container {
+                max-width: 100%;
+                padding: 0 1.5rem;
+            }
+            
+            .nav-links {
+                gap: 2rem;
+            }
+            
+            .stories-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .hero-stats {
+                gap: 2rem;
+            }
+            
+            .hero-stat-number {
+                font-size: 2rem;
+            }
+            
+            .stories-filters {
+                gap: 0.8rem;
+            }
+            
+            .filter-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            
+            .certificate-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .leaders-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .stories-section {
+                padding: 6rem 1.5rem;
+            }
+            
+            .hero {
+                padding: 1.5rem;
+            }
+            
+            .hero-title {
+                font-size: clamp(2.5rem, 6vw, 4rem);
+            }
+            
+            .hero-subtitle {
+                font-size: clamp(1.2rem, 3vw, 1.8rem);
+            }
+            
+            .hero-description {
+                font-size: clamp(1rem, 2.5vw, 1.2rem);
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+                margin-top: 3rem;
+            }
+            
+            .stories-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .stories-filters {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.8rem;
+            }
+            
+            .filter-btn {
+                width: 100%;
+                max-width: 200px;
+            }
+            
+            .story-card {
+                padding: 2rem;
+            }
+            
+            .story-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .story-icon {
+                margin: 0 auto;
+            }
+            
+            .lessons-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .lesson-card {
+                padding: 1.5rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .social-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .section {
+                padding: 3rem 1rem;
+            }
+            
+            .stories-section {
+                padding: 4rem 1rem;
+            }
+            
+            .hero {
+                padding: 1rem;
+            }
+            
+            .hero-title {
+                font-size: clamp(2rem, 5vw, 3rem);
+            }
+            
+            .hero-subtitle {
+                font-size: clamp(1rem, 2.5vw, 1.5rem);
+            }
+            
+            .hero-description {
+                font-size: clamp(0.9rem, 2vw, 1.1rem);
+            }
+            
+            .story-card {
+                padding: 1.5rem;
+            }
+            
+            .lesson-card {
+                padding: 1rem;
+            }
+            
+            .social-links {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .certificate-preview {
+                padding: 1rem;
+            }
+            
+            .contact-form-section,
+            .certificate-form-section {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Dark Theme Styles */
+        .dark-theme {
+            --primary-bg: #000000;
+            --secondary-bg: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        .dark-theme .hero-bg {
+            background: linear-gradient(135deg, #000000, #111111);
+        }
+
+        .dark-theme .stories-section {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.03), rgba(243, 192, 82, 0.03));
+        }
+
+        /* Touch Interactions for Mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .story-card:hover,
+            .lesson-card:hover,
+            .btn:hover,
+            .filter-btn:hover {
+                transform: none;
+            }
+            
+            .story-card:active,
+            .lesson-card:active {
+                transform: scale(0.98);
+            }
+            
+            .btn:active {
+                transform: scale(0.95);
+            }
+        }
+
+        /* High DPI Display Optimizations */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .story-icon,
+            .lesson-icon,
+            .feature-icon {
+                image-rendering: -webkit-optimize-contrast;
+                image-rendering: crisp-edges;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .navbar,
+            .mobile-nav,
+            .hero-cta,
+            .scroll-indicator,
+            .particles {
+                display: none !important;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 2rem 0;
+            }
+            
+            .section {
+                padding: 2rem 0;
+                page-break-inside: avoid;
+            }
+            
+            .story-card,
+            .lesson-card {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Hidden class for animations */
+        .hidden {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all var(--d-med) var(--ease-smooth);
+        }
+    </style>
+</head>
+<body>
+    <!-- Enhanced Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="scrollToTop()">AJFI Student</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#lessons">Lessons</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#certificate">Certificate</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="en">English</button>
+                    <button class="lang-btn" data-lang="bn">বাংলা</button>
+                </div>
+                <div class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+                    🌙
+                </div>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero" onclick="closeMobileNav()">Home</a></li>
+                <li><a href="#stories" onclick="closeMobileNav()">Stories</a></li>
+                <li><a href="#lessons" onclick="closeMobileNav()">Lessons</a></li>
+                <li><a href="#materials" onclick="closeMobileNav()">Materials</a></li>
+                <li><a href="#certificate" onclick="closeMobileNav()">Certificate</a></li>
+                <li><a href="#testimonials" onclick="closeMobileNav()">Testimonials</a></li>
+                <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+                <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-controls">
+                <div class="mobile-language-toggle">
+                    <button class="lang-btn active" data-lang="en">English</button>
+                    <button class="lang-btn" data-lang="bn">বাংলা</button>
+                </div>
+                <div class="mobile-theme-toggle" onclick="toggleTheme()">
+                    🌙
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <canvas class="particles" id="particles"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title" id="hero-title">AJFI Student</h1>
+            <p class="hero-subtitle" id="hero-subtitle">Successful Life Lessons & Certificates</p>
+            <p class="hero-description" id="hero-description">
+                Empowering students worldwide with life-changing lessons, practical skills, and personalized certificates that inspire success and personal growth.
+            </p>
+            <div class="hero-cta">
+                <a href="#stories" class="btn" id="explore-btn">
+                    <span>📚</span>
+                    <span>Explore Stories</span>
+                </a>
+                <a href="#certificate" class="btn btn-secondary" id="certificate-btn">
+                    <span>🏆</span>
+                    <span>Create Certificate</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">50K+</span>
+                    <span class="hero-stat-label" id="hero-stat-students">Students</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">150+</span>
+                    <span class="hero-stat-label" id="hero-stat-countries">Countries</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">98%</span>
+                    <span class="hero-stat-label" id="hero-stat-satisfaction">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('stories')"></div>
+    </section>
+
+    <!-- Enhanced Stories Section -->
+    <section id="stories" class="stories-section">
+        <div class="stories-container">
+            <div class="stories-header">
+                <h2 class="section-title" id="stories-title">Success Stories</h2>
+                <p id="stories-subtitle">Inspiring tales of students who transformed their lives through dedication and perseverance</p>
+            </div>
+            <div class="stories-filters">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All Stories</button>
+                <button class="filter-btn" data-filter="perseverance" id="filter-perseverance">Perseverance</button>
+                <button class="filter-btn" data-filter="study-habits" id="filter-study-habits">Study Habits</button>
+                <button class="filter-btn" data-filter="leadership" id="filter-leadership">Leadership</button>
+                <button class="filter-btn" data-filter="innovation" id="filter-innovation">Innovation</button>
+            </div>
+            <div class="stories-grid" id="stories-grid">
+                <!-- Stories will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="section">
+        <h2 class="section-title" id="lessons-title">Life Lessons</h2>
+        <div class="lessons-grid" id="lessons-grid">
+            <!-- Lessons will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section id="materials" class="section">
+        <h2 class="section-title" id="materials-title">Study Materials</h2>
+        <div class="materials-content" id="materials-content">
+            <!-- Materials will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <section id="certificate" class="section">
+        <h2 class="section-title" id="certificate-title">Generate Your Certificate</h2>
+        <div class="certificate-container">
+            <!-- Certificate Preview -->
+            <div class="certificate-preview-section">
+                <div class="preview-header">
+                    <h3 id="preview-title">Certificate Preview</h3>
+                    <div class="preview-controls">
+                        <button class="preview-btn active" data-template="classic" id="template-classic">Classic</button>
+                        <button class="preview-btn" data-template="modern" id="template-modern">Modern</button>
+                        <button class="preview-btn" data-template="minimal" id="template-minimal">Minimal</button>
+                    </div>
+                </div>
+                <div class="certificate-preview" id="certificate-preview">
+                    <!-- Certificate preview will be generated here -->
+                </div>
+                <div class="certificate-actions">
+                    <button class="action-btn download-btn" id="download-png-btn">
+                        <span class="btn-icon">📥</span>
+                        <span id="download-png-text">Download PNG</span>
+                    </button>
+                    <button class="action-btn print-btn" id="print-pdf-btn">
+                        <span class="btn-icon">🖨️</span>
+                        <span id="print-pdf-text">Print PDF</span>
+                    </button>
+                    <button class="action-btn share-btn" id="share-btn">
+                        <span class="btn-icon">📤</span>
+                        <span id="share-text">Share</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Certificate Form -->
+            <div class="certificate-form-section">
+                <div class="form-header">
+                    <h3 id="form-title">Certificate Details</h3>
+                    <p id="form-subtitle">Fill in your details to generate a personalized certificate</p>
+                </div>
+                <form id="certificate-form" class="advanced-certificate-form">
+                    <div class="form-section">
+                        <h4 class="section-label" id="personal-info-label">Personal Information</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="student-name" id="name-label">Student Name *</label>
+                                <input type="text" id="student-name" name="name" required placeholder="Enter your full name">
+                                <div class="input-focus-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-class" id="class-label">Class *</label>
+                                <select id="student-class" name="class" required>
+                                    <option value="" id="class-placeholder">Select your class</option>
+                                    <option value="6">Class 6</option>
+                                    <option value="7">Class 7</option>
+                                    <option value="8">Class 8</option>
+                                    <option value="9">Class 9</option>
+                                    <option value="10">Class 10</option>
+                                    <option value="11">Class 11</option>
+                                    <option value="12">Class 12</option>
+                                </select>
+                                <div class="input-focus-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="board" id="board-label">Board *</label>
+                                <select id="board" name="board" required>
+                                    <option value="" id="board-placeholder">Select your board</option>
+                                    <option value="CBSE">CBSE</option>
+                                    <option value="ICSE">ICSE</option>
+                                    <option value="State Board">State Board</option>
+                                    <option value="IB">IB</option>
+                                    <option value="Cambridge">Cambridge</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="input-focus-line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4 class="section-label" id="achievement-label">Achievement Details</h4>
+                        <div class="form-group">
+                            <label for="achievement-type" id="achievement-type-label">Achievement Type *</label>
+                            <select id="achievement-type" name="achievement" required>
+                                <option value="" id="achievement-placeholder">Select achievement type</option>
+                                <option value="completion" id="achievement-completion">Course Completion</option>
+                                <option value="excellence" id="achievement-excellence">Academic Excellence</option>
+                                <option value="leadership" id="achievement-leadership">Leadership</option>
+                                <option value="innovation" id="achievement-innovation">Innovation</option>
+                                <option value="participation" id="achievement-participation">Participation</option>
+                            </select>
+                            <div class="input-focus-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="course-name" id="course-label">Course/Program Name</label>
+                            <input type="text" id="course-name" name="course" placeholder="e.g., Successful Life Lessons">
+                            <div class="input-focus-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" id="message-label">Personal Message</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Add a personal message or quote..."></textarea>
+                            <div class="input-focus-line"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4 class="section-label" id="customization-label">Customization</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="certificate-language" id="cert-lang-label">Certificate Language</label>
+                                <select id="certificate-language" name="language">
+                                    <option value="en" id="cert-lang-en">English</option>
+                                    <option value="bn" id="cert-lang-bn">বাংলা</option>
+                                </select>
+                                <div class="input-focus-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="font-size" id="font-size-label">Font Size</label>
+                                <select id="font-size" name="fontSize">
+                                    <option value="normal" id="font-normal">Normal</option>
+                                    <option value="large" id="font-large">Large</option>
+                                    <option value="extra-large" id="font-extra-large">Extra Large</option>
+                                </select>
+                                <div class="input-focus-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="include-qr" name="includeQR" checked>
+                            <label for="include-qr" id="qr-label">Include QR Code for verification</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="include-date" name="includeDate" checked>
+                            <label for="include-date" id="date-label">Include issue date</label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn secondary-btn" id="preview-btn">Preview Certificate</button>
+                        <button type="submit" class="btn primary-btn" id="generate-btn">
+                            <span class="btn-text">Generate Certificate</span>
+                            <span class="btn-loading">Generating...</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Certificate Features -->
+        <div class="certificate-features">
+            <h3 id="features-title">Certificate Features</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h4 id="feature-security">Secure & Verified</h4>
+                    <p id="feature-security-desc">Each certificate includes unique verification codes and QR codes for authenticity.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h4 id="feature-design">Professional Design</h4>
+                    <p id="feature-design-desc">Multiple template options with professional layouts and official signatures.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h4 id="feature-mobile">Mobile Friendly</h4>
+                    <p id="feature-mobile-desc">Certificates are optimized for viewing and sharing on all devices.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <h4 id="feature-global">Global Recognition</h4>
+                    <p id="feature-global-desc">Recognized by educational institutions and employers worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <h2 class="section-title" id="testimonials-title">Student Testimonials</h2>
+        <div class="testimonials-content" id="testimonials-content">
+            <!-- Testimonials will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title" id="about-title">About AJFI Student</h2>
+        <div class="about-content">
+            <!-- Mission Statement -->
+            <div class="mission-statement">
+                <div class="mission-card">
+                    <div class="mission-icon">🎯</div>
+                    <h3 id="mission-title">Our Mission</h3>
+                    <p id="mission-text">To empower students worldwide with life-changing lessons, practical skills, and personalized certificates that inspire success and personal growth.</p>
+                </div>
+            </div>
+
+            <!-- Leadership Profiles -->
+            <div class="leadership-profiles">
+                <h3 id="leadership-title">Meet Our Leaders</h3>
+                <div class="leaders-grid">
+                    <div class="leader-profile">
+                        <div class="leader-avatar">
+                            <div class="avatar-image">👑</div>
+                            <div class="achievement-badge">CEO</div>
+                        </div>
+                        <div class="leader-info">
+                            <h4 class="leader-name">Arijit Mahata</h4>
+                            <p class="leader-title" id="ceo-title">Chief Executive Officer</p>
+                            <p class="leader-bio" id="ceo-bio">Visionary leader with 15+ years in technology and education. Founded AJ Future Industries to revolutionize learning and inspire the next generation of innovators.</p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🏆</span>
+                                    <span class="achievement-text" id="ceo-achievement-1">Global Education Award 2024</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">📈</span>
+                                    <span class="achievement-text" id="ceo-achievement-2">$2.5B Revenue Growth</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🌍</span>
+                                    <span class="achievement-text" id="ceo-achievement-3">124 Countries Impact</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader-profile">
+                        <div class="leader-avatar">
+                            <div class="avatar-image">🎯</div>
+                            <div class="achievement-badge">Chairman</div>
+                        </div>
+                        <div class="leader-info">
+                            <h4 class="leader-name">Subhajit Murmu</h4>
+                            <p class="leader-title" id="chairman-title">Chairman & Strategic Director</p>
+                            <p class="leader-bio" id="chairman-bio">Strategic mastermind with expertise in global expansion and educational innovation. Leads strategic initiatives that transform learning experiences worldwide.</p>
+                            <div class="achievements">
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🎖️</span>
+                                    <span class="achievement-text" id="chairman-achievement-1">Strategic Excellence Award</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">💼</span>
+                                    <span class="achievement-text" id="chairman-achievement-2">200+ Projects Led</span>
+                                </div>
+                                <div class="achievement-item">
+                                    <span class="achievement-icon">🤝</span>
+                                    <span class="achievement-text" id="chairman-achievement-3">25K+ Partners</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Stats -->
+            <div class="company-stats">
+                <h3 id="stats-title">AJFI Student Impact</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label" id="stat-students">Students Reached</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label" id="stat-countries">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label" id="stat-certificates">Certificates Issued</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label" id="stat-satisfaction">% Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title" id="contact-title">Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-header">
+                        <h3 id="form-header-title">Get in Touch</h3>
+                        <p id="form-header-subtitle">Send us a message and we'll respond within 24 hours</p>
+                    </div>
+                    <form id="contact-form" class="advanced-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" id="contact-name-label">Full Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                                <div class="input-focus-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" id="contact-email-label">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                                <div class="input-focus-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-phone" id="contact-phone-label">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone">
+                                <div class="input-focus-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject" id="contact-subject-label">Subject *</label>
+                                <select id="contact-subject" name="subject" required>
+                                    <option value="" id="subject-placeholder">Select a subject</option>
+                                    <option value="general" id="subject-general">General Inquiry</option>
+                                    <option value="certificate" id="subject-certificate">Certificate Issue</option>
+                                    <option value="partnership" id="subject-partnership">Partnership</option>
+                                    <option value="support" id="subject-support">Technical Support</option>
+                                    <option value="feedback" id="subject-feedback">Feedback</option>
+                                </select>
+                                <div class="input-focus-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" id="contact-message-label">Message *</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                            <div class="input-focus-line"></div>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy-consent" name="privacy" required>
+                            <label for="privacy-consent" id="privacy-label">I agree to the privacy policy and terms of service</label>
+                        </div>
+                        <button type="submit" class="submit-btn" id="contact-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Social -->
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <h3 id="contact-info-title">Contact Information</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-info">
+                                    <h4 id="email-title">Email</h4>
+                                    <p>contact@ajfuture.com</p>
+                                    <p>support@ajfuture.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-info">
+                                    <h4 id="phone-title">Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                    <p>+1 (555) 987-6543</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-info">
+                                    <h4 id="address-title">Address</h4>
+                                    <p>AJ Future Industries</p>
+                                    <p>Global Command Center</p>
+                                    <p>Tech Innovation Hub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media-card">
+                        <h3 id="social-title">Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" data-platform="facebook">
+                                <div class="social-icon">📘</div>
+                                <span id="facebook-text">Facebook</span>
+                            </a>
+                            <a href="#" class="social-link" data-platform="twitter">
+                                <div class="social-icon">🐦</div>
+                                <span id="twitter-text">Twitter</span>
+                            </a>
+                            <a href="#" class="social-link" data-platform="linkedin">
+                                <div class="social-icon">💼</div>
+                                <span id="linkedin-text">LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link" data-platform="instagram">
+                                <div class="social-icon">📷</div>
+                                <span id="instagram-text">Instagram</span>
+                            </a>
+                            <a href="#" class="social-link" data-platform="youtube">
+                                <div class="social-icon">📺</div>
+                                <span id="youtube-text">YouTube</span>
+                            </a>
+                            <a href="#" class="social-link" data-platform="github">
+                                <div class="social-icon">💻</div>
+                                <span id="github-text">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="response-time-card">
+                        <h3 id="response-title">Response Times</h3>
+                        <div class="response-times">
+                            <div class="response-item">
+                                <span class="response-type" id="email-response">Email</span>
+                                <span class="response-time">Within 24 hours</span>
+                            </div>
+                            <div class="response-item">
+                                <span class="response-type" id="phone-response">Phone</span>
+                                <span class="response-time">Mon-Fri 9AM-6PM</span>
+                            </div>
+                            <div class="response-item">
+                                <span class="response-type" id="social-response">Social Media</span>
+                                <span class="response-time">Within 2 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Enhanced Language Dictionary
+        const translations = {
+            en: {
+                heroTitle: "AJFI Student",
+                heroSubtitle: "Successful Life Lessons & Certificates",
+                exploreBtn: "Explore Stories",
+                certificateBtn: "Create Certificate",
+                storiesTitle: "Success Stories",
+                lessonsTitle: "Life Lessons",
+                materialsTitle: "Study Materials",
+                certificateTitle: "Generate Your Certificate",
+                formTitle: "Certificate Details",
+                nameLabel: "Student Name",
+                classLabel: "Class",
+                boardLabel: "Board",
+                messageLabel: "Personal Message (Optional)",
+                generateBtn: "Generate Certificate",
+                testimonialsTitle: "Student Testimonials",
+                aboutTitle: "About AJFI Student",
+                contactTitle: "Contact Us",
+                // About Section
+                missionTitle: "Our Mission",
+                missionText: "To empower students worldwide with life-changing lessons, practical skills, and personalized certificates that inspire success and personal growth.",
+                leadershipTitle: "Meet Our Leaders",
+                ceoTitle: "Chief Executive Officer",
+                ceoBio: "Visionary leader with 15+ years in technology and education. Founded AJ Future Industries to revolutionize learning and inspire the next generation of innovators.",
+                ceoAchievement1: "Global Education Award 2024",
+                ceoAchievement2: "$2.5B Revenue Growth",
+                ceoAchievement3: "124 Countries Impact",
+                chairmanTitle: "Chairman & Strategic Director",
+                chairmanBio: "Strategic mastermind with expertise in global expansion and educational innovation. Leads strategic initiatives that transform learning experiences worldwide.",
+                chairmanAchievement1: "Strategic Excellence Award",
+                chairmanAchievement2: "200+ Projects Led",
+                chairmanAchievement3: "25K+ Partners",
+                statsTitle: "AJFI Student Impact",
+                statStudents: "Students Reached",
+                statCountries: "Countries",
+                statCertificates: "Certificates Issued",
+                statSatisfaction: "% Satisfaction",
+                // Contact Section
+                formHeaderTitle: "Get in Touch",
+                formHeaderSubtitle: "Send us a message and we'll respond within 24 hours",
+                contactNameLabel: "Full Name *",
+                contactEmailLabel: "Email Address *",
+                contactPhoneLabel: "Phone Number",
+                contactSubjectLabel: "Subject *",
+                subjectPlaceholder: "Select a subject",
+                subjectGeneral: "General Inquiry",
+                subjectCertificate: "Certificate Issue",
+                subjectPartnership: "Partnership",
+                subjectSupport: "Technical Support",
+                subjectFeedback: "Feedback",
+                contactMessageLabel: "Message *",
+                privacyLabel: "I agree to the privacy policy and terms of service",
+                contactInfoTitle: "Contact Information",
+                emailTitle: "Email",
+                phoneTitle: "Phone",
+                addressTitle: "Address",
+                socialTitle: "Follow Us",
+                facebookText: "Facebook",
+                twitterText: "Twitter",
+                linkedinText: "LinkedIn",
+                instagramText: "Instagram",
+                youtubeText: "YouTube",
+                githubText: "GitHub",
+                responseTitle: "Response Times",
+                emailResponse: "Email",
+                phoneResponse: "Phone",
+                socialResponse: "Social Media",
+                // Certificate Section
+                previewTitle: "Certificate Preview",
+                templateClassic: "Classic",
+                templateModern: "Modern",
+                templateMinimal: "Minimal",
+                downloadPngText: "Download PNG",
+                printPdfText: "Print PDF",
+                shareText: "Share",
+                formSubtitle: "Fill in your details to generate a personalized certificate",
+                personalInfoLabel: "Personal Information",
+                nameLabel: "Student Name *",
+                classPlaceholder: "Select your class",
+                boardPlaceholder: "Select your board",
+                achievementLabel: "Achievement Details",
+                achievementTypeLabel: "Achievement Type *",
+                achievementPlaceholder: "Select achievement type",
+                achievementCompletion: "Course Completion",
+                achievementExcellence: "Academic Excellence",
+                achievementLeadership: "Leadership",
+                achievementInnovation: "Innovation",
+                achievementParticipation: "Participation",
+                courseLabel: "Course/Program Name",
+                messageLabel: "Personal Message",
+                customizationLabel: "Customization",
+                certLangLabel: "Certificate Language",
+                certLangEn: "English",
+                certLangBn: "বাংলা",
+                fontSizeLabel: "Font Size",
+                fontNormal: "Normal",
+                fontLarge: "Large",
+                fontExtraLarge: "Extra Large",
+                qrLabel: "Include QR Code for verification",
+                dateLabel: "Include issue date",
+                previewBtn: "Preview Certificate",
+                featuresTitle: "Certificate Features",
+                featureSecurity: "Secure & Verified",
+                featureSecurityDesc: "Each certificate includes unique verification codes and QR codes for authenticity.",
+                featureDesign: "Professional Design",
+                featureDesignDesc: "Multiple template options with professional layouts and official signatures.",
+                featureMobile: "Mobile Friendly",
+                featureMobileDesc: "Certificates are optimized for viewing and sharing on all devices.",
+                featureGlobal: "Global Recognition",
+                featureGlobalDesc: "Recognized by educational institutions and employers worldwide."
+            },
+            bn: {
+                heroTitle: "এজেএফআই স্টুডেন্ট",
+                heroSubtitle: "সফল জীবনের পাঠ ও সার্টিফিকেট",
+                exploreBtn: "গল্পগুলি দেখুন",
+                certificateBtn: "সার্টিফিকেট তৈরি করুন",
+                storiesTitle: "সফলতার গল্প",
+                lessonsTitle: "জীবনের পাঠ",
+                materialsTitle: "পাঠ্য সামগ্রী",
+                certificateTitle: "আপনার সার্টিফিকেট তৈরি করুন",
+                formTitle: "সার্টিফিকেটের বিবরণ",
+                nameLabel: "ছাত্রের নাম",
+                classLabel: "ক্লাস",
+                boardLabel: "বোর্ড",
+                messageLabel: "ব্যক্তিগত বার্তা (ঐচ্ছিক)",
+                generateBtn: "সার্টিফিকেট তৈরি করুন",
+                testimonialsTitle: "ছাত্রদের মতামত",
+                aboutTitle: "এজেএফআই স্টুডেন্ট সম্পর্কে",
+                contactTitle: "যোগাযোগ করুন",
+                // About Section
+                missionTitle: "আমাদের মিশন",
+                missionText: "জীবন পরিবর্তনকারী পাঠ, ব্যবহারিক দক্ষতা এবং ব্যক্তিগত সার্টিফিকেটের মাধ্যমে বিশ্বব্যাপী ছাত্রদের ক্ষমতায়ন করা যা সফলতা এবং ব্যক্তিগত বৃদ্ধিকে অনুপ্রাণিত করে।",
+                leadershipTitle: "আমাদের নেতাদের সাথে পরিচিত হন",
+                ceoTitle: "প্রধান নির্বাহী কর্মকর্তা",
+                ceoBio: "প্রযুক্তি এবং শিক্ষায় ১৫+ বছরের অভিজ্ঞতা সহ দূরদর্শী নেতা। শিক্ষাকে বিপ্লবী করে তুলতে এবং উদ্ভাবকদের পরবর্তী প্রজন্মকে অনুপ্রাণিত করতে এজেএফ ফিউচার ইন্ডাস্ট্রিজ প্রতিষ্ঠা করেছেন।",
+                ceoAchievement1: "বিশ্ব শিক্ষা পুরস্কার ২০২৪",
+                ceoAchievement2: "$২.৫ বিলিয়ন রাজস্ব বৃদ্ধি",
+                ceoAchievement3: "১২৪টি দেশে প্রভাব",
+                chairmanTitle: "চেয়ারম্যান ও কৌশলগত পরিচালক",
+                chairmanBio: "বিশ্বব্যাপী সম্প্রসারণ এবং শিক্ষাগত উদ্ভাবনে দক্ষতার সাথে কৌশলগত মাস্টারমাইন্ড। বিশ্বব্যাপী শিক্ষার অভিজ্ঞতাকে রূপান্তরিত করে এমন কৌশলগত উদ্যোগ পরিচালনা করেন।",
+                chairmanAchievement1: "কৌশলগত উৎকর্ষ পুরস্কার",
+                chairmanAchievement2: "২০০+ প্রকল্প পরিচালিত",
+                chairmanAchievement3: "২৫ হাজার+ অংশীদার",
+                statsTitle: "এজেএফআই স্টুডেন্ট প্রভাব",
+                statStudents: "ছাত্রদের কাছে পৌঁছেছে",
+                statCountries: "দেশ",
+                statCertificates: "সার্টিফিকেট জারি",
+                statSatisfaction: "% সন্তুষ্টি",
+                // Contact Section
+                formHeaderTitle: "যোগাযোগ করুন",
+                formHeaderSubtitle: "আমাদের একটি বার্তা পাঠান এবং আমরা ২৪ ঘন্টার মধ্যে উত্তর দেব",
+                contactNameLabel: "পূর্ণ নাম *",
+                contactEmailLabel: "ইমেইল ঠিকানা *",
+                contactPhoneLabel: "ফোন নম্বর",
+                contactSubjectLabel: "বিষয় *",
+                subjectPlaceholder: "একটি বিষয় নির্বাচন করুন",
+                subjectGeneral: "সাধারণ জিজ্ঞাসা",
+                subjectCertificate: "সার্টিফিকেট ইস্যু",
+                subjectPartnership: "অংশীদারিত্ব",
+                subjectSupport: "প্রযুক্তিগত সহায়তা",
+                subjectFeedback: "প্রতিক্রিয়া",
+                contactMessageLabel: "বার্তা *",
+                privacyLabel: "আমি গোপনীয়তা নীতি এবং সেবার শর্তাবলীতে সম্মত",
+                contactInfoTitle: "যোগাযোগের তথ্য",
+                emailTitle: "ইমেইল",
+                phoneTitle: "ফোন",
+                addressTitle: "ঠিকানা",
+                socialTitle: "আমাদের অনুসরণ করুন",
+                facebookText: "ফেসবুক",
+                twitterText: "টুইটার",
+                linkedinText: "লিংকডইন",
+                instagramText: "ইনস্টাগ্রাম",
+                youtubeText: "ইউটিউব",
+                githubText: "গিটহাব",
+                responseTitle: "উত্তরের সময়",
+                emailResponse: "ইমেইল",
+                phoneResponse: "ফোন",
+                socialResponse: "সামাজিক মিডিয়া",
+                // Certificate Section
+                previewTitle: "সার্টিফিকেট প্রিভিউ",
+                templateClassic: "ক্লাসিক",
+                templateModern: "আধুনিক",
+                templateMinimal: "সরল",
+                downloadPngText: "PNG ডাউনলোড",
+                printPdfText: "PDF প্রিন্ট",
+                shareText: "শেয়ার",
+                formSubtitle: "ব্যক্তিগত সার্টিফিকেট তৈরি করতে আপনার বিবরণ পূরণ করুন",
+                personalInfoLabel: "ব্যক্তিগত তথ্য",
+                nameLabel: "ছাত্রের নাম *",
+                classPlaceholder: "আপনার ক্লাস নির্বাচন করুন",
+                boardPlaceholder: "আপনার বোর্ড নির্বাচন করুন",
+                achievementLabel: "অর্জনের বিবরণ",
+                achievementTypeLabel: "অর্জনের ধরন *",
+                achievementPlaceholder: "অর্জনের ধরন নির্বাচন করুন",
+                achievementCompletion: "কোর্স সম্পূর্ণতা",
+                achievementExcellence: "শৈক্ষিক উৎকর্ষ",
+                achievementLeadership: "নেতৃত্ব",
+                achievementInnovation: "উদ্ভাবন",
+                achievementParticipation: "অংশগ্রহণ",
+                courseLabel: "কোর্স/প্রোগ্রামের নাম",
+                messageLabel: "ব্যক্তিগত বার্তা",
+                customizationLabel: "কাস্টমাইজেশন",
+                certLangLabel: "সার্টিফিকেট ভাষা",
+                certLangEn: "ইংরেজি",
+                certLangBn: "বাংলা",
+                fontSizeLabel: "ফন্ট সাইজ",
+                fontNormal: "সাধারণ",
+                fontLarge: "বড়",
+                fontExtraLarge: "অতিরিক্ত বড়",
+                qrLabel: "যাচাইকরণের জন্য QR কোড অন্তর্ভুক্ত করুন",
+                dateLabel: "ইস্যুর তারিখ অন্তর্ভুক্ত করুন",
+                previewBtn: "সার্টিফিকেট প্রিভিউ",
+                featuresTitle: "সার্টিফিকেট বৈশিষ্ট্য",
+                featureSecurity: "নিরাপদ ও যাচাইকৃত",
+                featureSecurityDesc: "প্রতিটি সার্টিফিকেটে সত্যতা যাচাইয়ের জন্য অনন্য যাচাইকরণ কোড এবং QR কোড অন্তর্ভুক্ত।",
+                featureDesign: "পেশাদার ডিজাইন",
+                featureDesignDesc: "পেশাদার লেআউট এবং অফিসিয়াল স্বাক্ষর সহ একাধিক টেমপ্লেট অপশন।",
+                featureMobile: "মোবাইল বান্ধব",
+                featureMobileDesc: "সার্টিফিকেটগুলি সমস্ত ডিভাইসে দেখার এবং শেয়ার করার জন্য অপ্টিমাইজ করা।",
+                featureGlobal: "বিশ্বব্যাপী স্বীকৃতি",
+                featureGlobalDesc: "বিশ্বব্যাপী শিক্ষাপ্রতিষ্ঠান এবং নিয়োগকর্তাদের দ্বারা স্বীকৃত।"
+            }
+        };
+
+        // Enhanced Stories Data
+        const storiesData = {
+            en: [
+                {
+                    id: 1,
+                    icon: "🌟",
+                    title: "The Power of Perseverance",
+                    summary: "How Rahul overcame academic challenges through determination and hard work, transforming from a struggling student to a top performer.",
+                    readTime: "5 min",
+                    grade: "6-8",
+                    topic: "perseverance",
+                    tags: ["Motivation", "Success", "Growth"],
+                    progress: 85
+                },
+                {
+                    id: 2,
+                    icon: "📚",
+                    title: "Study Smart, Not Hard",
+                    summary: "Priya's journey to discovering effective study techniques that changed her grades and transformed her learning experience.",
+                    readTime: "7 min",
+                    grade: "9-12",
+                    topic: "study-habits",
+                    tags: ["Study Tips", "Efficiency", "Learning"],
+                    progress: 92
+                },
+                {
+                    id: 3,
+                    icon: "👑",
+                    title: "Leadership in School",
+                    summary: "Arjun learns to lead his class project and inspires others to follow, becoming a role model for his peers.",
+                    readTime: "6 min",
+                    grade: "6-12",
+                    topic: "leadership",
+                    tags: ["Leadership", "Teamwork", "Inspiration"],
+                    progress: 78
+                },
+                {
+                    id: 4,
+                    icon: "💡",
+                    title: "Innovation in Learning",
+                    summary: "Sarah discovers creative ways to solve problems and develops innovative thinking skills that benefit her entire class.",
+                    readTime: "8 min",
+                    grade: "9-12",
+                    topic: "innovation",
+                    tags: ["Creativity", "Problem Solving", "Innovation"],
+                    progress: 88
+                },
+                {
+                    id: 5,
+                    icon: "🎯",
+                    title: "Goal Setting Success",
+                    summary: "Michael learns the importance of setting clear goals and achieves remarkable results through focused planning and execution.",
+                    readTime: "6 min",
+                    grade: "6-12",
+                    topic: "perseverance",
+                    tags: ["Goals", "Planning", "Achievement"],
+                    progress: 95
+                },
+                {
+                    id: 6,
+                    icon: "🤝",
+                    title: "Building Strong Relationships",
+                    summary: "Emma discovers the power of positive relationships and how they contribute to both academic and personal success.",
+                    readTime: "7 min",
+                    grade: "6-12",
+                    topic: "leadership",
+                    tags: ["Relationships", "Communication", "Success"],
+                    progress: 82
+                }
+            ],
+            bn: [
+                {
+                    id: 1,
+                    icon: "🌟",
+                    title: "অধ্যবসায়ের শক্তি",
+                    summary: "রাহুল কীভাবে দৃঢ়তা ও কঠোর পরিশ্রমের মাধ্যমে শিক্ষাগত চ্যালেঞ্জ কাটিয়ে উঠলেন এবং একজন সংগ্রামী ছাত্র থেকে শীর্ষ পারফরমার হয়ে উঠলেন।",
+                    readTime: "৫ মিনিট",
+                    grade: "৬-৮",
+                    topic: "perseverance",
+                    tags: ["অনুপ্রেরণা", "সফলতা", "বৃদ্ধি"],
+                    progress: 85
+                },
+                {
+                    id: 2,
+                    icon: "📚",
+                    title: "কঠিন নয়, স্মার্ট পড়াশোনা",
+                    summary: "প্রিয়ার কার্যকর পড়াশোনার কৌশল আবিষ্কারের যাত্রা যা তার গ্রেড পরিবর্তন করেছিল এবং তার শিক্ষার অভিজ্ঞতাকে রূপান্তরিত করেছিল।",
+                    readTime: "৭ মিনিট",
+                    grade: "৯-১২",
+                    topic: "study-habits",
+                    tags: ["পড়াশোনার টিপস", "দক্ষতা", "শেখা"],
+                    progress: 92
+                },
+                {
+                    id: 3,
+                    icon: "👑",
+                    title: "স্কুলে নেতৃত্ব",
+                    summary: "অর্জুন তার ক্লাস প্রজেক্টে নেতৃত্ব দেওয়া শিখে এবং অন্যদের অনুসরণ করতে অনুপ্রাণিত করে, তার সহপাঠীদের জন্য একজন আদর্শ হয়ে ওঠে।",
+                    readTime: "৬ মিনিট",
+                    grade: "৬-১২",
+                    topic: "leadership",
+                    tags: ["নেতৃত্ব", "দলগত কাজ", "অনুপ্রেরণা"],
+                    progress: 78
+                },
+                {
+                    id: 4,
+                    icon: "💡",
+                    title: "শেখায় উদ্ভাবন",
+                    summary: "সারাহ সমস্যা সমাধানের সৃজনশীল উপায় আবিষ্কার করে এবং উদ্ভাবনী চিন্তার দক্ষতা বিকাশ করে যা তার পুরো ক্লাসের উপকার করে।",
+                    readTime: "৮ মিনিট",
+                    grade: "৯-১২",
+                    topic: "innovation",
+                    tags: ["সৃজনশীলতা", "সমস্যা সমাধান", "উদ্ভাবন"],
+                    progress: 88
+                },
+                {
+                    id: 5,
+                    icon: "🎯",
+                    title: "লক্ষ্য নির্ধারণের সফলতা",
+                    summary: "মাইকেল স্পষ্ট লক্ষ্য নির্ধারণের গুরুত্ব শিখে এবং কেন্দ্রীভূত পরিকল্পনা ও বাস্তবায়নের মাধ্যমে অসাধারণ ফলাফল অর্জন করে।",
+                    readTime: "৬ মিনিট",
+                    grade: "৬-১২",
+                    topic: "perseverance",
+                    tags: ["লক্ষ্য", "পরিকল্পনা", "অর্জন"],
+                    progress: 95
+                },
+                {
+                    id: 6,
+                    icon: "🤝",
+                    title: "শক্তিশালী সম্পর্ক গড়ে তোলা",
+                    summary: "এমা ইতিবাচক সম্পর্কের শক্তি আবিষ্কার করে এবং কীভাবে তারা একাডেমিক ও ব্যক্তিগত সফলতায় অবদান রাখে।",
+                    readTime: "৭ মিনিট",
+                    grade: "৬-১২",
+                    topic: "leadership",
+                    tags: ["সম্পর্ক", "যোগাযোগ", "সফলতা"],
+                    progress: 82
+                }
+            ]
+        };
+
+        // Lessons Data
+        const lessonsData = {
+            en: [
+                { icon: "⏰", title: "Time Management", description: "Learn to prioritize and manage your time effectively" },
+                { icon: "🧠", title: "Growth Mindset", description: "Develop a positive attitude towards learning and challenges" },
+                { icon: "🎯", title: "Goal Setting", description: "Set SMART goals and achieve them step by step" },
+                { icon: "💪", title: "Resilience", description: "Bounce back from failures and learn from mistakes" },
+                { icon: "🤝", title: "Teamwork", description: "Collaborate effectively with others" },
+                { icon: "📝", title: "Note Taking", description: "Master the art of effective note-taking" },
+                { icon: "🎨", title: "Creativity", description: "Think outside the box and innovate" },
+                { icon: "🗣️", title: "Communication", description: "Express yourself clearly and confidently" },
+                { icon: "📊", title: "Critical Thinking", description: "Analyze problems and make informed decisions" },
+                { icon: "🌱", title: "Self-Discipline", description: "Build habits that lead to success" },
+                { icon: "🎓", title: "Study Techniques", description: "Find the study methods that work best for you" },
+                { icon: "💡", title: "Problem Solving", description: "Approach challenges with a systematic mindset" }
+            ],
+            bn: [
+                { icon: "⏰", title: "সময় ব্যবস্থাপনা", description: "অগ্রাধিকার নির্ধারণ এবং সময় কার্যকরভাবে ব্যবস্থাপনা করা শিখুন" },
+                { icon: "🧠", title: "বৃদ্ধির মানসিকতা", description: "শেখার এবং চ্যালেঞ্জের প্রতি ইতিবাচক মনোভাব গড়ে তুলুন" },
+                { icon: "🎯", title: "লক্ষ্য নির্ধারণ", description: "স্মার্ট লক্ষ্য নির্ধারণ করুন এবং ধাপে ধাপে অর্জন করুন" },
+                { icon: "💪", title: "স্থিতিস্থাপকতা", description: "ব্যর্থতা থেকে ফিরে আসুন এবং ভুল থেকে শিখুন" },
+                { icon: "🤝", title: "দলগত কাজ", description: "অন্যদের সাথে কার্যকরভাবে সহযোগিতা করুন" },
+                { icon: "📝", title: "নোট নেওয়া", description: "কার্যকর নোট নেওয়ার শিল্পে দক্ষ হন" },
+                { icon: "🎨", title: "সৃজনশীলতা", description: "বাক্সের বাইরে চিন্তা করুন এবং উদ্ভাবন করুন" },
+                { icon: "🗣️", title: "যোগাযোগ", description: "নিজেকে স্পষ্ট এবং আত্মবিশ্বাসের সাথে প্রকাশ করুন" },
+                { icon: "📊", title: "সমালোচনামূলক চিন্তা", description: "সমস্যা বিশ্লেষণ করুন এবং তথ্যভিত্তিক সিদ্ধান্ত নিন" },
+                { icon: "🌱", title: "আত্ম-শৃঙ্খলা", description: "সফলতার দিকে নিয়ে যাওয়া অভ্যাস গড়ে তুলুন" },
+                { icon: "🎓", title: "পড়াশোনার কৌশল", description: "আপনার জন্য সবচেয়ে ভালো কাজ করে এমন পড়াশোনার পদ্ধতি খুঁজুন" },
+                { icon: "💡", title: "সমস্যা সমাধান", description: "একটি পদ্ধতিগত মানসিকতা নিয়ে চ্যালেঞ্জের মুখোমুখি হন" }
+            ]
+        };
+
+        // Current Language
+        let currentLang = 'en';
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeTheme();
+            initializeLanguage();
+            initializeNavigation();
+            initializeParticles();
+            initializeStories();
+            initializeLessons();
+            initializeCertificate();
+            initializeScrollAnimations();
+            
+            // Initialize animated counters when about section is visible
+            const aboutObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        aboutObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutObserver.observe(aboutSection);
+            }
+            
+            // Initialize hero stats animation
+            setTimeout(() => {
+                animateHeroStats();
+            }, 2000);
+        });
+
+        // Animate Hero Stats
+        function animateHeroStats() {
+            const statNumbers = document.querySelectorAll('.hero-stat-number');
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                const number = parseInt(text.replace(/[^\d]/g, ''));
+                const suffix = text.replace(/[\d]/g, '');
+                
+                let current = 0;
+                const increment = number / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= number) {
+                        current = number;
+                        clearInterval(timer);
+                    }
+                    stat.textContent = Math.floor(current) + suffix;
+                }, 30);
+            });
+        }
+
+        // Language Toggle
+        function initializeLanguage() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.dataset.lang;
+                    switchLanguage(lang);
+                    
+                    // Update active button
+                    langButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        }
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+            
+            // Update all text elements
+            document.getElementById('hero-title').textContent = t.heroTitle;
+            document.getElementById('hero-subtitle').textContent = t.heroSubtitle;
+            document.getElementById('explore-btn').textContent = t.exploreBtn;
+            document.getElementById('certificate-btn').textContent = t.certificateBtn;
+            document.getElementById('stories-title').textContent = t.storiesTitle;
+            document.getElementById('lessons-title').textContent = t.lessonsTitle;
+            document.getElementById('materials-title').textContent = t.materialsTitle;
+            document.getElementById('certificate-title').textContent = t.certificateTitle;
+            document.getElementById('form-title').textContent = t.formTitle;
+            document.getElementById('name-label').textContent = t.nameLabel;
+            document.getElementById('class-label').textContent = t.classLabel;
+            document.getElementById('board-label').textContent = t.boardLabel;
+            document.getElementById('message-label').textContent = t.messageLabel;
+            document.getElementById('generate-btn').textContent = t.generateBtn;
+            document.getElementById('testimonials-title').textContent = t.testimonialsTitle;
+            document.getElementById('about-title').textContent = t.aboutTitle;
+            document.getElementById('contact-title').textContent = t.contactTitle;
+
+            // Update About Section
+            document.getElementById('mission-title').textContent = t.missionTitle;
+            document.getElementById('mission-text').textContent = t.missionText;
+            document.getElementById('leadership-title').textContent = t.leadershipTitle;
+            document.getElementById('ceo-title').textContent = t.ceoTitle;
+            document.getElementById('ceo-bio').textContent = t.ceoBio;
+            document.getElementById('ceo-achievement-1').textContent = t.ceoAchievement1;
+            document.getElementById('ceo-achievement-2').textContent = t.ceoAchievement2;
+            document.getElementById('ceo-achievement-3').textContent = t.ceoAchievement3;
+            document.getElementById('chairman-title').textContent = t.chairmanTitle;
+            document.getElementById('chairman-bio').textContent = t.chairmanBio;
+            document.getElementById('chairman-achievement-1').textContent = t.chairmanAchievement1;
+            document.getElementById('chairman-achievement-2').textContent = t.chairmanAchievement2;
+            document.getElementById('chairman-achievement-3').textContent = t.chairmanAchievement3;
+            document.getElementById('stats-title').textContent = t.statsTitle;
+            document.getElementById('stat-students').textContent = t.statStudents;
+            document.getElementById('stat-countries').textContent = t.statCountries;
+            document.getElementById('stat-certificates').textContent = t.statCertificates;
+            document.getElementById('stat-satisfaction').textContent = t.statSatisfaction;
+
+            // Update Contact Section
+            document.getElementById('form-header-title').textContent = t.formHeaderTitle;
+            document.getElementById('form-header-subtitle').textContent = t.formHeaderSubtitle;
+            document.getElementById('contact-name-label').textContent = t.contactNameLabel;
+            document.getElementById('contact-email-label').textContent = t.contactEmailLabel;
+            document.getElementById('contact-phone-label').textContent = t.contactPhoneLabel;
+            document.getElementById('contact-subject-label').textContent = t.contactSubjectLabel;
+            document.getElementById('subject-placeholder').textContent = t.subjectPlaceholder;
+            document.getElementById('subject-general').textContent = t.subjectGeneral;
+            document.getElementById('subject-certificate').textContent = t.subjectCertificate;
+            document.getElementById('subject-partnership').textContent = t.subjectPartnership;
+            document.getElementById('subject-support').textContent = t.subjectSupport;
+            document.getElementById('subject-feedback').textContent = t.subjectFeedback;
+            document.getElementById('contact-message-label').textContent = t.contactMessageLabel;
+            document.getElementById('privacy-label').textContent = t.privacyLabel;
+            document.getElementById('contact-info-title').textContent = t.contactInfoTitle;
+            document.getElementById('email-title').textContent = t.emailTitle;
+            document.getElementById('phone-title').textContent = t.phoneTitle;
+            document.getElementById('address-title').textContent = t.addressTitle;
+            document.getElementById('social-title').textContent = t.socialTitle;
+            document.getElementById('facebook-text').textContent = t.facebookText;
+            document.getElementById('twitter-text').textContent = t.twitterText;
+            document.getElementById('linkedin-text').textContent = t.linkedinText;
+            document.getElementById('instagram-text').textContent = t.instagramText;
+            document.getElementById('youtube-text').textContent = t.youtubeText;
+            document.getElementById('github-text').textContent = t.githubText;
+            document.getElementById('response-title').textContent = t.responseTitle;
+            document.getElementById('email-response').textContent = t.emailResponse;
+            document.getElementById('phone-response').textContent = t.phoneResponse;
+            document.getElementById('social-response').textContent = t.socialResponse;
+
+            // Update Certificate Section
+            document.getElementById('preview-title').textContent = t.previewTitle;
+            document.getElementById('template-classic').textContent = t.templateClassic;
+            document.getElementById('template-modern').textContent = t.templateModern;
+            document.getElementById('template-minimal').textContent = t.templateMinimal;
+            document.getElementById('download-png-text').textContent = t.downloadPngText;
+            document.getElementById('print-pdf-text').textContent = t.printPdfText;
+            document.getElementById('share-text').textContent = t.shareText;
+            document.getElementById('form-subtitle').textContent = t.formSubtitle;
+            document.getElementById('personal-info-label').textContent = t.personalInfoLabel;
+            document.getElementById('name-label').textContent = t.nameLabel;
+            document.getElementById('class-placeholder').textContent = t.classPlaceholder;
+            document.getElementById('board-placeholder').textContent = t.boardPlaceholder;
+            document.getElementById('achievement-label').textContent = t.achievementLabel;
+            document.getElementById('achievement-type-label').textContent = t.achievementTypeLabel;
+            document.getElementById('achievement-placeholder').textContent = t.achievementPlaceholder;
+            document.getElementById('achievement-completion').textContent = t.achievementCompletion;
+            document.getElementById('achievement-excellence').textContent = t.achievementExcellence;
+            document.getElementById('achievement-leadership').textContent = t.achievementLeadership;
+            document.getElementById('achievement-innovation').textContent = t.achievementInnovation;
+            document.getElementById('achievement-participation').textContent = t.achievementParticipation;
+            document.getElementById('course-label').textContent = t.courseLabel;
+            document.getElementById('message-label').textContent = t.messageLabel;
+            document.getElementById('customization-label').textContent = t.customizationLabel;
+            document.getElementById('cert-lang-label').textContent = t.certLangLabel;
+            document.getElementById('cert-lang-en').textContent = t.certLangEn;
+            document.getElementById('cert-lang-bn').textContent = t.certLangBn;
+            document.getElementById('font-size-label').textContent = t.fontSizeLabel;
+            document.getElementById('font-normal').textContent = t.fontNormal;
+            document.getElementById('font-large').textContent = t.fontLarge;
+            document.getElementById('font-extra-large').textContent = t.fontExtraLarge;
+            document.getElementById('qr-label').textContent = t.qrLabel;
+            document.getElementById('date-label').textContent = t.dateLabel;
+            document.getElementById('preview-btn').textContent = t.previewBtn;
+            document.getElementById('features-title').textContent = t.featuresTitle;
+            document.getElementById('feature-security').textContent = t.featureSecurity;
+            document.getElementById('feature-security-desc').textContent = t.featureSecurityDesc;
+            document.getElementById('feature-design').textContent = t.featureDesign;
+            document.getElementById('feature-design-desc').textContent = t.featureDesignDesc;
+            document.getElementById('feature-mobile').textContent = t.featureMobile;
+            document.getElementById('feature-mobile-desc').textContent = t.featureMobileDesc;
+            document.getElementById('feature-global').textContent = t.featureGlobal;
+            document.getElementById('feature-global-desc').textContent = t.featureGlobalDesc;
+
+            // Update stories and lessons
+            initializeStories();
+            initializeLessons();
+            
+            // Update certificate preview
+            generateCertificatePreview();
+        }
+
+        // Particle System
+        function initializeParticles() {
+            const canvas = document.getElementById('particles');
+            const ctx = canvas.getContext('2d');
+            
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            
+            const particles = [];
+            const particleCount = window.innerWidth < 768 ? 30 : 60;
+            
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * 0.5;
+                    this.vy = (Math.random() - 0.5) * 0.5;
+                    this.size = Math.random() * 2 + 1;
+                    this.opacity = Math.random() * 0.5 + 0.2;
+                }
+                
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    
+                    if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                    if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+                }
+                
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(243, 192, 82, ${this.opacity})`;
+                    ctx.fill();
+                }
+            }
+            
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+            
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(particle => {
+                    particle.update();
+                    particle.draw();
+                });
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
+        }
+
+        // Initialize Stories
+        function initializeStories() {
+            const storiesGrid = document.getElementById('stories-grid');
+            const stories = storiesData[currentLang];
+            
+            storiesGrid.innerHTML = stories.map(story => `
+                <div class="story-card" onclick="openStory(${story.id})" data-topic="${story.topic}">
+                    <div class="story-header">
+                        <div class="story-icon">${story.icon}</div>
+                        <h3 class="story-title">${story.title}</h3>
+                    </div>
+                    <div class="story-tags">
+                        ${story.tags.map(tag => `<span class="story-tag">${tag}</span>`).join('')}
+                    </div>
+                    <p class="story-summary">${story.summary}</p>
+                    <div class="story-progress">
+                        <div class="story-progress-bar" style="width: ${story.progress}%"></div>
+                    </div>
+                    <div class="story-meta">
+                        <span>${story.readTime}</span>
+                        <span>Grade ${story.grade}</span>
+                        <a href="#" class="story-read-more">Read More →</a>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Initialize story filtering
+            initializeStoryFilters();
+        }
+
+        // Initialize Story Filters
+        function initializeStoryFilters() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const storyCards = document.querySelectorAll('.story-card');
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active filter
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    // Filter stories
+                    storyCards.forEach(card => {
+                        if (filter === 'all' || card.dataset.topic === filter) {
+                            card.style.display = 'flex';
+                            card.style.animation = 'fadeInUp 0.6s ease-out';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        // Initialize Lessons
+        function initializeLessons() {
+            const lessonsGrid = document.getElementById('lessons-grid');
+            const lessons = lessonsData[currentLang];
+            
+            lessonsGrid.innerHTML = lessons.map(lesson => `
+                <div class="lesson-card" onclick="openLesson('${lesson.title}')">
+                    <span class="lesson-icon">${lesson.icon}</span>
+                    <h3 class="lesson-title">${lesson.title}</h3>
+                    <p class="lesson-description">${lesson.description}</p>
+                </div>
+            `).join('');
+        }
+
+        // Initialize Certificate
+        function initializeCertificate() {
+            const form = document.getElementById('certificate-form');
+            const nameInput = document.getElementById('student-name');
+            const preview = document.getElementById('certificate-preview');
+            
+            // Generate initial certificate preview
+            generateCertificatePreview();
+            
+            // Update preview on name change
+            nameInput.addEventListener('input', generateCertificatePreview);
+            
+            // Handle form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                downloadCertificate();
+            });
+
+            // Template switching
+            document.querySelectorAll('.preview-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.preview-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    generateCertificatePreview();
+                });
+            });
+
+            // Action buttons
+            document.getElementById('download-png-btn').addEventListener('click', downloadCertificate);
+            document.getElementById('print-pdf-btn').addEventListener('click', printCertificate);
+            document.getElementById('share-btn').addEventListener('click', shareCertificate);
+            document.getElementById('preview-btn').addEventListener('click', generateCertificatePreview);
+
+            // Contact form
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', handleContactForm);
+        }
+
+        function generateCertificatePreview() {
+            const name = document.getElementById('student-name').value || 'Your Name';
+            const studentClass = document.getElementById('student-class').value;
+            const board = document.getElementById('board').value;
+            const achievementType = document.getElementById('achievement-type').value;
+            const courseName = document.getElementById('course-name').value;
+            const message = document.getElementById('message').value;
+            const certLang = document.getElementById('certificate-language').value;
+            const fontSize = document.getElementById('font-size').value;
+            const includeQR = document.getElementById('include-qr').checked;
+            const includeDate = document.getElementById('include-date').checked;
+            
+            const activeTemplate = document.querySelector('.preview-btn.active').dataset.template;
+            
+            const preview = document.getElementById('certificate-preview');
+            
+            // Template styles
+            const templates = {
+                classic: {
+                    border: '3px solid #f3c052',
+                    background: 'linear-gradient(135deg, #ffffff, #f8f9fa)',
+                    titleColor: '#0b2545',
+                    accentColor: '#f3c052'
+                },
+                modern: {
+                    border: '2px solid #00d4ff',
+                    background: 'linear-gradient(135deg, #ffffff, #e3f2fd)',
+                    titleColor: '#00d4ff',
+                    accentColor: '#00d4ff'
+                },
+                minimal: {
+                    border: '1px solid #333',
+                    background: '#ffffff',
+                    titleColor: '#333',
+                    accentColor: '#666'
+                }
+            };
+            
+            const template = templates[activeTemplate];
+            
+            preview.innerHTML = `
+                <div style="text-align: center; color: #0b2545; font-family: 'Poppins', sans-serif; border: ${template.border}; background: ${template.background}; padding: 2rem; border-radius: 10px; position: relative;">
+                    <div style="position: absolute; top: 20px; left: 20px; width: 60px; height: 60px; background: ${template.accentColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">🎓</div>
+                    <div style="position: absolute; top: 20px; right: 20px; width: 60px; height: 60px; background: ${template.accentColor}; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">🏆</div>
+                    
+                    <h1 style="color: ${template.titleColor}; margin: 2rem 0 1rem; font-size: ${fontSize === 'large' ? '2.5rem' : fontSize === 'extra-large' ? '3rem' : '2rem'};">AJFI Student</h1>
+                    <h2 style="color: ${template.accentColor}; margin-bottom: 2rem; font-size: ${fontSize === 'large' ? '1.8rem' : fontSize === 'extra-large' ? '2rem' : '1.5rem'};">Certificate of Achievement</h2>
+                    
+                    <p style="font-size: ${fontSize === 'large' ? '1.3rem' : fontSize === 'extra-large' ? '1.5rem' : '1.1rem'}; margin-bottom: 2rem;">This is to certify that</p>
+                    
+                    <h3 style="color: ${template.titleColor}; font-size: ${fontSize === 'large' ? '2.2rem' : fontSize === 'extra-large' ? '2.5rem' : '1.8rem'}; margin-bottom: 2rem; border-bottom: 2px solid ${template.accentColor}; padding-bottom: 1rem; display: inline-block;">${name}</h3>
+                    
+                    <p style="font-size: ${fontSize === 'large' ? '1.2rem' : fontSize === 'extra-large' ? '1.4rem' : '1rem'}; margin-bottom: 2rem; line-height: 1.6;">
+                        has successfully completed the ${courseName || 'Successful Life Lessons'} program and demonstrated exceptional commitment to personal growth.
+                    </p>
+                    
+                    <div style="display: flex; justify-content: space-between; margin-top: 3rem; align-items: center;">
+                        <div style="text-align: left;">
+                            <p style="font-weight: bold; margin-bottom: 0.5rem;">CEO Arijit Mahata</p>
+                            <div style="border-top: 1px solid #0b2545; width: 150px;"></div>
+                        </div>
+                        ${includeQR ? `<div style="text-align: center; padding: 1rem; background: rgba(243, 192, 82, 0.1); border-radius: 10px;">
+                            <div style="width: 80px; height: 80px; background: #333; margin: 0 auto; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem;">QR CODE</div>
+                        </div>` : ''}
+                        <div style="text-align: right;">
+                            <p style="font-weight: bold; margin-bottom: 0.5rem;">Chairman Subhajit Murmu</p>
+                            <div style="border-top: 1px solid #0b2545; width: 150px;"></div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; font-size: ${fontSize === 'large' ? '1rem' : fontSize === 'extra-large' ? '1.2rem' : '0.9rem'};">
+                        <p>Class: ${studentClass || 'N/A'} | Board: ${board || 'N/A'}</p>
+                        ${includeDate ? `<p>Date: ${new Date().toLocaleDateString()}</p>` : ''}
+                        ${message ? `<p style="margin-top: 1rem; font-style: italic; color: ${template.accentColor};">"${message}"</p>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function downloadCertificate() {
+            const name = document.getElementById('student-name').value;
+            if (!name) {
+                alert('Please enter your name first!');
+                return;
+            }
+            
+            // Create a canvas for the certificate
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 1200;
+            canvas.height = 800;
+            
+            // Get form data
+            const studentClass = document.getElementById('student-class').value;
+            const board = document.getElementById('board').value;
+            const achievementType = document.getElementById('achievement-type').value;
+            const courseName = document.getElementById('course-name').value;
+            const message = document.getElementById('message').value;
+            const includeQR = document.getElementById('include-qr').checked;
+            const includeDate = document.getElementById('include-date').checked;
+            
+            // Draw certificate background
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw border
+            ctx.strokeStyle = '#f3c052';
+            ctx.lineWidth = 8;
+            ctx.strokeRect(40, 40, canvas.width - 80, canvas.height - 80);
+            
+            // Draw decorative elements
+            ctx.fillStyle = '#f3c052';
+            ctx.beginPath();
+            ctx.arc(100, 100, 30, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 20px Poppins';
+            ctx.textAlign = 'center';
+            ctx.fillText('🎓', 100, 110);
+            
+            ctx.fillStyle = '#f3c052';
+            ctx.beginPath();
+            ctx.arc(canvas.width - 100, 100, 30, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#ffffff';
+            ctx.fillText('🏆', canvas.width - 100, 110);
+            
+            // Draw main content
+            ctx.fillStyle = '#0b2545';
+            ctx.font = 'bold 48px Poppins';
+            ctx.textAlign = 'center';
+            ctx.fillText('AJFI Student', canvas.width / 2, 150);
+            
+            ctx.fillStyle = '#f3c052';
+            ctx.font = 'bold 32px Poppins';
+            ctx.fillText('Certificate of Achievement', canvas.width / 2, 200);
+            
+            ctx.fillStyle = '#0b2545';
+            ctx.font = '24px Poppins';
+            ctx.fillText('This is to certify that', canvas.width / 2, 280);
+            
+            ctx.font = 'bold 40px Poppins';
+            ctx.fillText(name, canvas.width / 2, 350);
+            
+            // Draw underline
+            ctx.strokeStyle = '#f3c052';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(canvas.width / 2 - 200, 370);
+            ctx.lineTo(canvas.width / 2 + 200, 370);
+            ctx.stroke();
+            
+            ctx.fillStyle = '#0b2545';
+            ctx.font = '20px Poppins';
+            ctx.fillText(`has successfully completed the ${courseName || 'Successful Life Lessons'} program`, canvas.width / 2, 420);
+            ctx.fillText('and demonstrated exceptional commitment to personal growth.', canvas.width / 2, 450);
+            
+            // Draw signatures
+            ctx.font = 'bold 18px Poppins';
+            ctx.textAlign = 'left';
+            ctx.fillText('CEO Arijit Mahata', 200, 600);
+            ctx.textAlign = 'right';
+            ctx.fillText('Chairman Subhajit Murmu', canvas.width - 200, 600);
+            
+            // Draw signature lines
+            ctx.strokeStyle = '#0b2545';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(200, 620);
+            ctx.lineTo(350, 620);
+            ctx.stroke();
+            
+            ctx.beginPath();
+            ctx.moveTo(canvas.width - 350, 620);
+            ctx.lineTo(canvas.width - 200, 620);
+            ctx.stroke();
+            
+            // Draw QR code placeholder
+            if (includeQR) {
+                ctx.fillStyle = '#333';
+                ctx.fillRect(canvas.width / 2 - 40, 550, 80, 80);
+                ctx.fillStyle = '#ffffff';
+                ctx.font = '12px Poppins';
+                ctx.textAlign = 'center';
+                ctx.fillText('QR CODE', canvas.width / 2, 595);
+            }
+            
+            // Draw date and details
+            ctx.textAlign = 'center';
+            ctx.fillStyle = '#666';
+            ctx.font = '16px Poppins';
+            ctx.fillText(`Class: ${studentClass || 'N/A'} | Board: ${board || 'N/A'}`, canvas.width / 2, 700);
+            if (includeDate) {
+                ctx.fillText(`Date: ${new Date().toLocaleDateString()}`, canvas.width / 2, 730);
+            }
+            
+            // Download the image
+            const link = document.createElement('a');
+            link.download = `AJFI_Certificate_${name.replace(/\s+/g, '_')}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+            
+            // Show success message
+            showConfetti();
+        }
+
+        function printCertificate() {
+            const name = document.getElementById('student-name').value;
+            if (!name) {
+                alert('Please enter your name first!');
+                return;
+            }
+            
+            // Create printable version
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <html>
+                    <head>
+                        <title>AJFI Certificate - ${name}</title>
+                        <style>
+                            body { font-family: 'Poppins', sans-serif; margin: 0; padding: 2rem; }
+                            .certificate { border: 3px solid #f3c052; padding: 3rem; text-align: center; background: white; }
+                            .title { color: #0b2545; font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; }
+                            .subtitle { color: #f3c052; font-size: 1.8rem; font-weight: bold; margin-bottom: 2rem; }
+                            .name { color: #0b2545; font-size: 2rem; font-weight: bold; margin: 2rem 0; border-bottom: 2px solid #f3c052; padding-bottom: 1rem; display: inline-block; }
+                            .description { font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.6; }
+                            .signatures { display: flex; justify-content: space-between; margin-top: 3rem; }
+                            .signature { text-align: center; }
+                            .signature-line { border-top: 1px solid #0b2545; width: 150px; margin-top: 0.5rem; }
+                            .details { margin-top: 2rem; font-size: 1rem; color: #666; }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="certificate">
+                            <div class="title">AJFI Student</div>
+                            <div class="subtitle">Certificate of Achievement</div>
+                            <p>This is to certify that</p>
+                            <div class="name">${name}</div>
+                            <div class="description">
+                                has successfully completed the Successful Life Lessons program and demonstrated exceptional commitment to personal growth.
+                            </div>
+                            <div class="signatures">
+                                <div class="signature">
+                                    <div>CEO Arijit Mahata</div>
+                                    <div class="signature-line"></div>
+                                </div>
+                                <div class="signature">
+                                    <div>Chairman Subhajit Murmu</div>
+                                    <div class="signature-line"></div>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <p>Class: ${document.getElementById('student-class').value || 'N/A'} | Board: ${document.getElementById('board').value || 'N/A'}</p>
+                                <p>Date: ${new Date().toLocaleDateString()}</p>
+                            </div>
+                        </div>
+                    </body>
+                </html>
+            `);
+            printWindow.document.close();
+            printWindow.print();
+        }
+
+        function shareCertificate() {
+            const name = document.getElementById('student-name').value;
+            if (!name) {
+                alert('Please enter your name first!');
+                return;
+            }
+            
+            const text = `I just earned my certificate from AJFI Student! Check out my achievement: ${name} - Successful Life Lessons Certificate`;
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'AJFI Student Certificate',
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                // Fallback - copy to clipboard
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Certificate text copied to clipboard! You can now share it on social media.');
+                });
+            }
+        }
+
+        function handleContactForm(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('contact-submit-btn');
+            submitBtn.classList.add('loading');
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.classList.remove('loading');
+                alert('Thank you for your message! CEO Arijit Mahata and Chairman Subhajit Murmu will review your message personally and respond within 24 hours.');
+                
+                // Reset form
+                document.getElementById('contact-form').reset();
+            }, 2000);
+        }
+
+        // Animated counter for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.dataset.target);
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current).toLocaleString();
+                }, 20);
+            });
+        }
+
+        function showConfetti() {
+            // Simple confetti effect
+            const confetti = document.createElement('div');
+            confetti.style.position = 'fixed';
+            confetti.style.top = '0';
+            confetti.style.left = '0';
+            confetti.style.width = '100%';
+            confetti.style.height = '100%';
+            confetti.style.pointerEvents = 'none';
+            confetti.style.zIndex = '9999';
+            
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.style.position = 'absolute';
+                particle.style.width = '10px';
+                particle.style.height = '10px';
+                particle.style.backgroundColor = ['#f3c052', '#00d4ff', '#ffffff'][Math.floor(Math.random() * 3)];
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = '-10px';
+                particle.style.borderRadius = '50%';
+                particle.style.animation = `fall ${Math.random() * 3 + 2}s linear forwards`;
+                
+                confetti.appendChild(particle);
+            }
+            
+            document.body.appendChild(confetti);
+            
+            setTimeout(() => {
+                document.body.removeChild(confetti);
+            }, 5000);
+        }
+
+        // Scroll Animations
+        function initializeScrollAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Enhanced Navigation Functions
+        function initializeNavigation() {
+            // Mobile menu toggle
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Mobile Navigation Functions
+        function closeMobileNav() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            
+            mobileMenuToggle.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Theme Toggle Function
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.getElementById('theme-toggle');
+            const mobileThemeToggle = document.querySelector('.mobile-theme-toggle');
+            
+            body.classList.toggle('dark-theme');
+            
+            const isDark = body.classList.contains('dark-theme');
+            themeToggle.textContent = isDark ? '☀️' : '🌙';
+            if (mobileThemeToggle) {
+                mobileThemeToggle.textContent = isDark ? '☀️' : '🌙';
+            }
+            
+            // Save theme preference
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        // Initialize Theme
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.body.classList.add('dark-theme');
+                document.getElementById('theme-toggle').textContent = '☀️';
+                const mobileThemeToggle = document.querySelector('.mobile-theme-toggle');
+                if (mobileThemeToggle) {
+                    mobileThemeToggle.textContent = '☀️';
+                }
+            }
+        }
+
+        // Scroll Functions
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Add CSS for confetti animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
